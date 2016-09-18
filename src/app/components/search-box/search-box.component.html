@@ -1,4 +1,12 @@
 <form class="search-box">
-  <input class="search-box-input" type="text"
-    (keyup.enter)="search()">
+  <md-input #searchInput placeholder="Search" name="search" [(ngModel)]="searchModel"
+    (keyup.enter)="search(searchInput.value)">
+
+  </md-input>
+
+  <ul class="search-box-results">
+    <li *ngFor="let res of results$ | async" (click)="select(res)">
+      {{res.name}}
+    </li>
+  </ul>
 </form>

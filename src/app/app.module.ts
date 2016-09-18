@@ -12,6 +12,7 @@ import { MdButtonModule }  from '@angular2-material/button'
 import { MdSidenavModule } from '@angular2-material/sidenav'
 import { MdListModule }    from '@angular2-material/list'
 import { MdToolbarModule } from '@angular2-material/toolbar'
+import { MdInputModule } from '@angular2-material/input'
 
 // Store
 import { rootReducer } from 'store/reducers'
@@ -42,6 +43,7 @@ import { routing }    from './app.routing'
     MdButtonModule,
     MdSidenavModule,
     MdListModule,
+    MdInputModule,
 
     routing
   ],
