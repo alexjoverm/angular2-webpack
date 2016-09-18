@@ -1,16 +1,10 @@
+@import '~styles/theme.scss';
+
 // styles applied on :host are applied on the current component, "app" in this case
 :host {
+  height: 100%;
+  color: $font-color;
   display: block;
-}
-
-header {
-  background-color: #fff;
-  padding: 16px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -19,9 +13,4 @@ main {
   text-align: center;
   margin-top: 50px;
   display: block;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.8em;
 }

@@ -1,0 +1,7 @@
+@import '~styles/theme';
+
+// component styles are encapsulated and only applied to their components
+:host {
+  display: flex;
+  flex: 1 1 auto;
+}

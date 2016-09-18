@@ -1,0 +1,21 @@
+@import '~styles/theme';
+
+md-sidenav.sidenav {
+  width: $sidenav-width;
+  background: $sidenav-color;
+  color: $sidenav-font-color;
+
+  header.sidenav-header {
+    background: $sidenav-header-color;
+    color: $sidenav-header-font-color;
+    height: $sidenav-header-height;
+    display: flex;
+    align-items: center;
+
+    h1 { margin: 0; }
+  }
+}
+
+md-sidenav-layout {
+  height: 100%;
+}

@@ -1,18 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core'
+import { SidenavComponent } from 'containers/sidenav/sidenav.component'
+import { Observable } from 'rxjs/Observable'
 
-import { ApiService } from './shared';
-
-import '../style/app.scss';
+import 'styles/app.scss'
 
 @Component({
-  selector: 'my-app', // <my-app></my-app>
+  selector: 'ft-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  url = 'https://github.com/preboot/angular2-webpack';
 
-  constructor(private api: ApiService) {
-    // Do something with api
+  @ViewChild(SidenavComponent) sidenavCmp:SidenavComponent
+
+  constructor() {}
+
+  openSidenav() {
+    console.log(SidenavComponent)
+    // console.log(this.sidenavCmp)
+    this.sidenavCmp.open()
   }
+
 }
